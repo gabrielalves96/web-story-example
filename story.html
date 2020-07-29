@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html amp lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web story example</title>
+    <link rel="canonical" href="story.html">
+    <style amp-boilerplate>
+        body {
+            -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            animation: -amp-start 8s steps(1, end) 0s 1 normal both
+        }
+
+        @-webkit-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-moz-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-ms-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-o-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+    </style>
+    <noscript>
+        <style amp-boilerplate>
+            body {
+                -webkit-animation: none;
+                -moz-animation: none;
+                -ms-animation: none;
+                animation: none
+            }
+        </style>
+    </noscript>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <style amp-custom>
+        amp-story {
+            font-family: 'Open Sans';
+            color: #fff;
+            text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
+        }
+        #page1 {
+            background: #ff3333;
+        }
+    </style>
+</head>
+
+<body>
+    <amp-story standalone title="Web story example" publisher="gabrielalves96" poster-portrait-src="assets/boar.jpg" publisher-logo-src="assets/boar_emoji.png">
+        <amp-story-page id="cover">
+            <amp-story-grid-layer template="fill">
+                <amp-img src="assets/boar.jpg" layout="responsive" width="375" height="812"></amp-img>
+            </amp-story-grid-layer>
+            <amp-story-grid-layer template="thirds">
+                <h1 grid-area="upper-third">Title</h1>
+                <p grid-area="middle-third">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </amp-story-grid-layer>
+        </amp-story-page>
+        <amp-story-page id="page1">
+            <amp-story-grid-layer template="vertical">
+                <h1>Title</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <amp-img src="assets/boar.jpg" animate-in="fade-in" animate-in-delay="0.5s" width="100" height="100" layout="responsive"></amp-img>
+            </amp-story-grid-layer>
+        </amp-story-page>
+        <amp-story-bookend src="links.json" layout="nodisplay"></amp-story-bookend>
+    </amp-story>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+{
+    "bookendVersion": "v1.0",
+    "shareProviders": [
+      "email",
+      "twitter",
+      "facebook"
+    ],
+    "components": [
+      {
+        "type": "heading",
+        "text": "bookend example"
+      },
+      {
+        "type": "small",
+        "title": "Wikipedia",
+        "url": "https://wikipedia.org"
+      },
+      {
+        "type": "landscape",
+        "title": "My Githyb",
+        "url": "https://github.com/gabrielalves96",
+        "image": "assets/boar_emoji.png",
+        "category": "Github"
+      },
+      {
+        "type": "cta-link",
+        "links": [
+          {
+            "text": "Github",
+            "url": "https://github.com/gabrielalves96"
+          }
+        ]
+      }
+    ]
+  }
+  
